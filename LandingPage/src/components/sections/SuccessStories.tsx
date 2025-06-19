@@ -35,17 +35,17 @@ const stories: Story[] = [
   {
     name: "Vinayakumar P Zingade",
     college:" PES College of Engineering, Mandya",
-    info: "We’re proud to support Vinayakumar P Zingade, whose gratitude for our mentorship reflects PLYRoNeST’s commitment to nurturing student entrepreneurs.",
+    info: "We’re proud to support Vinayakumar P Zingade, whose gratitude for our mentorship reflects Plyronest’s commitment to nurturing student entrepreneurs.",
   },
   {
     name: "Vrinda K. S.",
     college:"RV College of Engineering, Bengaluru",
-    info: "Vrinda K. S. and her team, backed by PLYRoNeST, earned 3rd place at the IEEE Conference and advanced to INEX 2024 for their smart urban water solution. With mentorship and 50% sponsorship, they built a strong prototype.",
+    info: "Vrinda K. S. and her team, backed by Plyronest, earned 3rd place at the IEEE Conference and advanced to INEX 2024 for their smart urban water solution. With mentorship and 50% sponsorship, they built a strong prototype.",
   },
   {
     name: " Nimet, Shiva Rampure, Brinda",
     college:"INEX 2024 Participants",
-    info: "Team Smart Sparkhad a transformational journey at INEX 2024, gaining expert mentorship, nationwide connections, and real-world insight. Thanks to PLYRoNeST, they focused fully on innovation and walked away inspired to build for lasting impact.",
+    info: "Team Smart Sparkhad a transformational journey at INEX 2024, gaining expert mentorship, nationwide connections, and real-world insight. Thanks to Plyronest, they focused fully on innovation and walked away inspired to build for lasting impact.",
   },
   
 ];
