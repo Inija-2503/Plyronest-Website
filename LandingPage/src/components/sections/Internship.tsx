@@ -7,7 +7,7 @@ export const Internship=()=>{
     return(
         <section id="internship">
             {" "}
-            <Container className="space-y-10 md:space-y-12 py-30 px-8 bg-body">
+            <Container className="space-y-10 md:space-y-12 py-30 px-8 bg-body mt-20">
                 <div className="text-center max-w-3xl mx-auto space-y-4">
                     <Title>
                         Internship Opportunities

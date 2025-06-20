@@ -8,11 +8,12 @@ export const AboutUs = () => {
   return (
     <section id="about-us">
       {" "}
-      <Container className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center py-28 px-6 bg-body">
+      <Container className="flex flex-col md:flex-row gap-10 lg:gap-12 items-center py-28 px-6 bg-body mt-20">
         <div className="w-full md:w-5/12 lg:w-1/2">
           <div className="w-full h-80 sm:h-96 relative">
             <img
               src="assets/Images/freepik__the-style-is-candid-image-photography-with-natural__46174.png"
+              // src="assets/Images/about.png"
               className="w-full h-full object-cover rounded-3xl shadow-lg relative z-10"
               alt="About Our Mission"
             />
@@ -80,25 +81,22 @@ export const AboutUs = () => {
 
       </Container>
       <h1 className="text-3xl md:text-4xl font-bold text-black-700 mb-7 text-heading-2 text-center ">Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-900 ml-2">Leaders</span></h1>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center mb-20 ">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 justify-items-center mb-20 ">
 
-        <Team name="Lohith T D" role="Founder & CEO" />
-        <Team name="Puneeth" role="CO-Founder & Head of Outreach Team" />
-        <Team name="Nitish" role="CO-Founder & CTO" />
+        <Team name="Sujay Lohith" role="Founder & CEO" />
+        <Team name="Nitish J" role="CO-Founder & CTO" />
+        <Team name="Puneeth G S" role="CO-Founder & OTH" />
+        <Team name="Sushan S Karkera" role="CO-Founder & R&D/SD Lead" />
       </div>
       <h1 className="text-3xl md:text-4xl font-bold text-black-700 mb-7 text-heading-2 text-center mt-5 ">Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-green-900 ml-2">Core Team</span></h1>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center mb-25">
-        <Team name="Sumeet Hibare" role="Software Developer" />
-        <Team name="Somesh Hotkar" role="Technical Team" />
-        <Team name="Sanni Kumar" role="Technical Team" />
-        <Team name="Vinay Buddhi" role="Technical Team" />
-        <Team name="Shivraj" role="Technical Team" />
-        <Team name="Pooja" role="CO-Founder & Finance Head" />
-        <Team name="Thosif Bapu Saheb Naikwadi" role="CO-Founder & CMO" />
-        <Team name="Ruchita" role="CO-Founder & HR" />
-        <Team name="Darshan" role="Events Manager" />
-        <Team name="Harshit Kumar" role="Curriculum Manager" />
-        <Team name="Shreyas" role="Events Manager" />
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 justify-items-center mb-25">
+        <Team name="Thosif B N" role="CMO" />
+        <Team name="Ruchita S N" role=" HR" />
+        <Team name="Pooja G" role="CFO" />
+        <Team name="Shivraj" role="COO & Product Manager" />
+        <Team name="Darshan B M" role="Events Manager" />
+        <Team name="Shreyas T S" role="Asst.Events Manager" />
+        <Team name="Mutturaj M S" role="EPM Head" /> 
         <Team name="Inija" role="Technical Trainer" />
       </div>
     </section>

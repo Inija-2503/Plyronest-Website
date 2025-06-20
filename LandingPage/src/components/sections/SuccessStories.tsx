@@ -97,13 +97,13 @@ export const SuccessStories = () => {
             key={idx}
             className="min-w-[280px] max-w-[500px] bg-gradient-to-r from-green-100 to-green-200 p-6 rounded-xl shadow-md flex-shrink-0"
           >
-            <h3 className="text-xl font-semibold text-green-800 mb-2">
+            <h3 className="text-xl font-semibold text-black mb-2">
               {story.name}
             </h3>
-             <p className="text-green-700 text-sm leading-relaxed">
+             <p className="text-gray-900 text-sm leading-relaxed">
               {story.college}
             </p>
-            <p className="text-gray-700 text-sm leading-relaxed mt-4">
+            <p className="text-gray-800 text-sm leading-relaxed mt-4">
               {story.info}
             </p>
           </div>

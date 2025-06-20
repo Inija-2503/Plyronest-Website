@@ -1,3 +1,4 @@
+import { InternshipCard } from "../cards/InternshipCard";
 import { PdfCard } from "../cards/PdfCard";
 import { SuccessStories } from "../sections/SuccessStories";
 
@@ -39,7 +40,7 @@ export const Gallery = () => {
         {/* <p className="text-lg text-heading-2">Coming Soon...</p> */}
         
         <PdfCard
-          title="Annual Year Book 2025"
+          title="Annual Year Book - 2025"
           para="A glimpse into our proudest achievements and unforgettable memories from the year.
                 Each moment captured reflects our growth, teamwork, and dedication.
                 From joyful celebrations to milestones reached, every photo tells a story.
@@ -47,7 +48,17 @@ export const Gallery = () => {
                 Together, we’ve built something truly special."
           image="assets/Images/book.png"
           pdfUrl="/assets/Images/Empowering Student Entrepreneurs.pdf"
-/>
+        />
+        <InternshipCard 
+        title="Internship Collaborations Yearbook - 2025"
+          para="A proud showcase of the impactful internship opportunities we extended to 
+          students across institutions in 2025. This yearbook highlights our collaborative efforts, meaningful engagements, 
+          and the knowledge sharing that empowered aspiring talents from diverse colleges. 
+          Every page reflects our commitment to mentorship, growth, and building future-ready professionals through real-world experience."
+          image="assets/Images/InternBook.png"
+          pdfUrl="assets/Images/Web Development Internship UIUX & Front-End Technologies.pdf"
+        
+        />
 
       </section>
     </section>

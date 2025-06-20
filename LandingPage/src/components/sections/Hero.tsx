@@ -7,7 +7,7 @@ export const Hero = () => {
   return (
     <section className="relative pt-32 lg:pt-36">
       {" "}
-      <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12">
+      <Container className="flex flex-col lg:flex-row gap-10 lg:gap-12 mt-15">
         {/* <div className="absolute w-full lg:w-1/2 inset-y-0 lg:right-0">
           <span
             className="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 
@@ -80,7 +80,8 @@ export const Hero = () => {
 
         <div className="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
           <img
-            src="/assets/Images/freepik-i-want-an-image-for-a-research-and-training-image-for-the-website-20250611035707HABD.png"
+            // src="/assets/Images/freepik-i-want-an-image-for-a-research-and-training-image-for-the-website-20250611035707HABD.png"
+            src="assets/Images/img4.jpg"
             alt="Hero image"
             width={2350}
             height={2359}

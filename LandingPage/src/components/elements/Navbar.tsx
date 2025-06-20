@@ -3,7 +3,7 @@ import { Container } from "../shared/Container";
 //  import logo from "/assets/icon.svg";
 // import { NavItem } from "../shared/NavItem";
 // // import { BtnLink } from "../shared/BtnLink";
-import { useThemeStore } from "../../store/ThemeStore";
+// import { useThemeStore } from "../../store/ThemeStore";
 import { FaHome, FaUsers, FaGraduationCap, FaImage, FaGlobe, FaPaperPlane } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const navigate = useNavigate();
-  const { toggleTheme, theme } = useThemeStore();
+  // const { toggleTheme, theme } = useThemeStore();
 
   interface NavItem {
     icon: React.ReactNode;
@@ -54,7 +54,7 @@ export const Navbar = () => {
           {/* Logo */}
           <div className="min-w-max inline-flex relative z-50">
             <a href="/" className="relative flex items-center gap-6">
-              <img src="assets/Images/logo.png" alt="PLYRoNeST Logo" className="w-40 h-15" />
+              <img src="assets/Images/logo.png" alt="PLYRoNeST Logo" className="w-80 h-25" />
               {/* <div className="inline-flex text-lg font-semibold text-heading-1">
                 Plyronest
               </div> */}
@@ -113,7 +113,7 @@ export const Navbar = () => {
   
 
           {/* Theme toggle button */}
-          <div className="min-w-max flex items-center gap-x-3 z-50">
+          {/* <div className="min-w-max flex items-center gap-x-3 z-50">
             <button
               onClick={toggleTheme}
               className="outline-hidden flex relative text-heading-2 rounded-full p-2 lg:p-3 border border-box-border cursor-pointer"
@@ -150,7 +150,7 @@ export const Navbar = () => {
                 </svg>
               )}
             </button>
-          </div>
+          </div> */}
         </nav>
       </Container>
     </header>

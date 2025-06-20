@@ -7,13 +7,13 @@ interface PDFCardProps {
 
 export const PdfCard = ({ title, image, pdfUrl,para}: PDFCardProps) => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto px-4 py-12 bg--color-bg">
+    <section className="flex flex-col md:flex-row items-center justify-between w-full max-w-5xl mx-auto px-4 py-8 bg--color-bg">
       {/* Left: Book/Image */}
       <div className="w-full md:w-1/2 mb-6 md:mb-0">
         <img
           src={image}
           alt={title}
-          className="w-full h-auto object-cover "
+          className="w-[400px] h-[550px] object-cover "
         />
       </div>
 
@@ -33,13 +33,13 @@ export const PdfCard = ({ title, image, pdfUrl,para}: PDFCardProps) => {
             href={pdfUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg--color-bg text-heading-1 px-5 py-3 rounded hover:bg-blue-700 transition"
+            className="bg--color-bg text-heading-1 px-5 py-3 rounded hover:text-blue-700 transition"
           >
              Preview
           </a>
           <a 
           href="https://online.flippingbook.com/view/617846757/" 
-          className="fbo-embed bg--color-bg text-heading-1 px-5 py-3 rounded hover:bg-green-700 transition text-center block" 
+          className="fbo-embed bg--color-bg text-heading-1 px-5 py-3 rounded hover:text-green-700 transition text-center block" 
           data-fbo-id="7e3777d771" 
           data-fbo-ratio="3:2" 
           data-fbo-lightbox="yes" 
@@ -54,12 +54,14 @@ export const PdfCard = ({ title, image, pdfUrl,para}: PDFCardProps) => {
           <a
             href={pdfUrl}
             download
-            className="bg--color-bg text-heading-1 px-5 py-3 rounded hover:bg-purple-700 transition"
+            className="bg--color-bg text-heading-1 px-5 py-3 rounded hover:text-purple-700 transition"
           >
              Download
           </a>
         </div>
       </div>
+      
     </section>
+    
   );
 };

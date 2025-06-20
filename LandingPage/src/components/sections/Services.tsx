@@ -16,7 +16,7 @@ export const Services = () => {
           </Paragraph>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 justify-items-center">
           {services.map((service, key) => (
             <Service
               key={key}

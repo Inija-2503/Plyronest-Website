@@ -3,7 +3,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaYoutube,
-  FaFacebook,
+  // FaFacebook,
 } from "react-icons/fa";
 
 export const Footer = () => {
@@ -15,7 +15,7 @@ export const Footer = () => {
           <div>
             <img
               src="/assets/Images/logo.png"
-              className="w-36 mb-10 "
+              className="w-50 mb-10 "
               alt="Plyronest Logo"
             />
             <h4 className="text-lg font-semibold text-heading-1 mb-2">About Us</h4>
@@ -73,18 +73,18 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-heading-1 mb-3">Follow Us</h4>
             <div className="flex gap-4 text-xl text-heading-1">
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/plyronest/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="hover:text-blue-700" />
               </a>
-              <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@PLYRoNeST8/videos" target="_blank" rel="noopener noreferrer">
                 <FaYoutube className="hover:text-red-600" />
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/plyronest/#" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="hover:text-pink-500" />
               </a>
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="hover:text-blue-600" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
