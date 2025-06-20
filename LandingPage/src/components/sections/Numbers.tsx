@@ -6,7 +6,7 @@ export const Numbers = () => {
       <Container className="flex justify-center align-center">
         <div
           className="mx-auto lg:mx-0 p-5 sm:p-6 sm:py-8 max-w-5xl rounded-3xl bg-box-bg
-                        border border-box-border shadow-lg shadow-box-shadow md:divide-x divide-box-border
+                       shadow-[0_0_10px_4px_rgba(34,197,94,0.6)] 
                         grid grid-cols-3 md:grid-cols-7"
         >
           <div className="text-center px-5">

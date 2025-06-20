@@ -8,7 +8,7 @@ interface ServiceProps {
 
 export const Service = ({ title, description, image }: ServiceProps) => {
   return (
-    <div className="rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow overflow-hidden mb-20">
+    <div className="rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow overflow-hidden mb-20 w-75 sm:max-w-65 md:max-w-70">
       
       <div className="w-full h-40 md:h-48 lg:h-52">
         <img

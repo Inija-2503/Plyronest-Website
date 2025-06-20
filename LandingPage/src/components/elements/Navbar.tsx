@@ -1,26 +1,54 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Container } from "../shared/Container";
-// import logo from "/assets/icon.svg";
-import { NavItem } from "../shared/NavItem";
-// import { BtnLink } from "../shared/BtnLink";
+//  import logo from "/assets/icon.svg";
+// import { NavItem } from "../shared/NavItem";
+// // import { BtnLink } from "../shared/BtnLink";
 import { useThemeStore } from "../../store/ThemeStore";
+import { FaHome, FaUsers, FaGraduationCap, FaImage, FaGlobe, FaPaperPlane } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
-export const navItems = [
-  { href: "/", text: "Home" },
-  { href: "/about", text: "About Us" },
-  // { href: "#services", text: "Services" },
-  { href: "/internship", text: "Internship" },
-  { href: "https://www.inex-india.com/hei-award.php", text: "INEX" , target:"_blank"},
-  { href: "/gallery", text: "Gallery" },
-  { href: "/connect", text: "Connect" },
-];
+// export const navItems = [
+//   { href: "/", text: "Home" },
+//   { href: "/about", text: "About Us" },
+//   // { href: "#services", text: "Services" },
+//   { href: "/internship", text: "Internship" },
+//   { href: "https://www.inex-india.com/hei-award.php", text: "INEX" , target:"_blank"},
+//   { href: "/gallery", text: "Gallery" },
+//   { href: "/connect", text: "Connect" },
+// ];
 
 export const Navbar = () => {
+  const navigate = useNavigate();
   const { toggleTheme, theme } = useThemeStore();
-  const [menuOpen, setMenuOpen] = useState(false);
+
+  interface NavItem {
+    icon: React.ReactNode;
+    href: string;
+    label: string;
+    external?: boolean;
+  }
+
+  const navItems: NavItem[] = [
+    { icon: <FaHome />, href: "/", label: "Home" },
+    { icon: <FaUsers />, href: "/about", label: "About" },
+    { icon: <FaGraduationCap />, href: "/internship", label: "Internship" },
+    { icon: <FaGlobe />, href: "https://www.inex-india.com/hei-award.php", label: "INEX", external: true },
+    { icon: <FaImage />, href: "/gallery", label: "Gallery" },
+    { icon: <FaPaperPlane />, href: "/connect", label: "Connect" },
+  ];
+
+  const handleClick = (item: NavItem) => {
+    if (item.external) {
+      window.open(item.href, "_blank");
+    } else {
+      navigate(item.href);
+    }
+  };
+  
+  // const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed bg--color-bg inset-x-0 top-0 z-50 py-6 bg-body">
+    <header className="absolute bg--color-bg inset-x-0 top-0 z-50 py-6 bg-body">
       <Container>
         <nav className="w-full flex justify-between items-center gap-6 relative">
           {/* Logo */}
@@ -34,7 +62,7 @@ export const Navbar = () => {
           </div>
 
           {/* Hamburger menu button (shown on mobile) */}
-          <button
+          {/* <button
             className="lg:hidden z-50 p-2 border rounded-md border-box-border text-heading-2"
             onClick={() => setMenuOpen(!menuOpen)}
           >
@@ -59,25 +87,30 @@ export const Navbar = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             )}
-          </button>
+          </button> */}
 
           {/* Navigation Menu */}
-          <div
-            className={`flex flex-col lg:flex-row w-full lg:justify-between lg:items-center 
-                      absolute lg:static top-full left-0 bg-body lg:bg-transparent 
-                      border-x border-x-box-border lg:border-x-0 transition-all duration-300 
-                      ${menuOpen ? "h-auto py-4 opacity-100 visible" : "h-0 opacity-0 invisible"} lg:opacity-100 lg:visible lg:h-auto`}
-          >
-            <ul
-              className="border-t border-box-border lg:border-t-0 px-6 lg:px-0 
-                           pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 
-                           text-lg text-heading-2 w-full lg:justify-center lg:items-center"
+          <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-white shadow-xl rounded-full px-3 py-2 flex gap-2">
+          {navItems.map((item, idx) => (
+            <div
+              key={idx}
+              className="relative group"
             >
-              {navItems.map((item, key) => (
-                <NavItem href={item.href} text={item.text} target={item.target} key={key} />
-              ))}
-            </ul>
-          </div>
+              <button
+                onClick={() => handleClick(item)}
+                className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-200 hover:bg-green-700 hover:text-white text-gray-800 transition-all focus:outline-none"
+              >
+                {item.icon}
+              </button>
+              <span
+                className="absolute -top-10 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-green-500 text-heading-1 text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity duration-200"
+              >
+                {item.label}
+              </span>
+            </div>
+          ))}
+        </nav>
+  
 
           {/* Theme toggle button */}
           <div className="min-w-max flex items-center gap-x-3 z-50">
@@ -123,4 +156,6 @@ export const Navbar = () => {
     </header>
   );
 };
+
+
 

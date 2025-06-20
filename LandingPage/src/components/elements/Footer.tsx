@@ -1,6 +1,4 @@
 import { Container } from "../shared/Container";
-import { navItems } from "./Navbar";
-import { NavItem } from "../shared/NavItem";
 import {
   FaInstagram,
   FaLinkedin,
@@ -29,22 +27,45 @@ export const Footer = () => {
           {/* 2. Quick Links */}
           <div>
             <h4 className="text-lg font-semibold text-heading-1 mb-3">Why US</h4>
-            <ul className="space-y-2">
-              {navItems.map((item, index) => (
-                <NavItem key={index} href={item.href} text={item.text} />
-              ))}
+            <ul className="flex flex-col gap-4 text-xl text-heading-1">
+              <li>
+                <a href="/"  rel="noopener noreferrer" className="hover:text-green-700">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/about"  rel="noopener noreferrer" className="hover:text-green-700">
+                  About US
+                </a>
+              </li>
+              <li>
+                <a href="/internship"  rel="noopener noreferrer" className="hover:text-green-700">
+                  Internship
+                </a>
+              </li>
+
+              <li>
+                <a href="/gallery"  rel="noopener noreferrer" className="hover:text-green-700">
+                  Gallery
+                </a>
+              </li>
+              <li>
+                <a href="/connect"  rel="noopener noreferrer"className="hover:text-green-700">
+                  Connect
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <h4 className="text-lg font-semibold text-heading-1 mb-3">Quick Links</h4>
             <ul className="flex flex-col gap-4 text-xl text-heading-1">
               <li>
-                <a href="https://www.inex-india.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.inex-india.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-700">
                   Inex
                 </a>
               </li>
-              <li>Privacy Policy</li>
-              <li>Terms of Service</li>
+              <li className="hover:text-green-700">Privacy Policy</li>
+              <li className="hover:text-green-700">Terms of Service</li>
             </ul>
           </div>
 
@@ -69,9 +90,9 @@ export const Footer = () => {
         </div>
 
         {/* Optional: Bottom copyright */}
-        <div className="mt-10 border-t border-gray-300 pt-4 text-center text-sm text-">
+        {/* <div className="mt-10 border-t border-gray-300 pt-4 text-center text-sm text-">
           &copy; 2022 Plyronest. All rights reserved.
-        </div>
+        </div> */}
       </Container>
     </footer>
   );
