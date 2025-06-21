@@ -36,6 +36,14 @@ export const CTA = () => {
             {/* Contact Form */}
             <form onSubmit={handleSubmit} className="mt-10 space-y-6">
               <div>
+                <label className="text-heading-2 block mb-2 text-lg  font-semibold">Name</label>
+                <input
+                  type="text"
+                  value={subject}
+                  onChange={(e) => setSubject(e.target.value)}
+                  placeholder="Enter Your Name"
+                  className="text-heading-2 w-full px-4 py-3 rounded-lg border border-gray-300  focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
                 <label className="text-heading-2 block mb-2 text-lg  font-semibold">Subject</label>
                 <input
                   type="text"

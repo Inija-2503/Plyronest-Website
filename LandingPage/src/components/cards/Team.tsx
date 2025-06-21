@@ -46,8 +46,8 @@ interface TeamProps {
 
 export const Team = ({ name, role }: TeamProps) => {
   return (
-    <div className="max-w-xs w-full  text-center p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg
-                    shadow-box-shadow relative overflow-hidden hover:scale-105 transform transition duration-300">
+    <div className="max-w-xs w-[300px]  text-center p-5 sm:p-6 lg:p-8 rounded-3xl  bg-box-bg shadow-lg
+                    shadow-box-shadow relative overflow-hidden hover:scale-105 transform transition duration-300 hover:shadow-[0_0_10px_4px_rgba(34,197,94,0.6)] ">
       <h3 className="text-lg font-semibold text-heading-1 ">{name}</h3>
       <p className="text-sm text-heading-2">{role}</p>
     </div>

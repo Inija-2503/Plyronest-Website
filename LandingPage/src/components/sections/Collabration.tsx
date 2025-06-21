@@ -4,12 +4,12 @@ export const Collabration = () => {
       {/* Text + Logos Section */}
       <div className="relative flex flex-col items-center text-center lg:text-left lg:items-start max-w-3xl lg:max-w-none lg:flex-1 lg:w-1/2 mt-8">
         {/* Gradient Heading */}
-        <h2 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-700">
+        <h2 className="text-4xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-green-700">
           Kalpataru × Plyronest
         </h2>
 
         {/* Subheading */}
-        <p className="mt-9 text-lg md:text-xl text-heading-2 font-medium">
+        <p className="mt-9 text-lg md:text-lg text-heading-2 font-medium">
           Providing personalized guidance and support for their academic and career aspirations. Plyronest is proud to partner with Kalpataru to offer our students access to this valuable resource.
         </p>
 
