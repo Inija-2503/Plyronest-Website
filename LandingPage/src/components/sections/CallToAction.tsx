@@ -4,6 +4,7 @@ import { Container } from "../shared/Container";
 import { Paragraph } from "../shared/Paragraph";
 import {  FaLinkedinIn, FaInstagram, FaYoutube } from "react-icons/fa";
 export const CTA = () => {
+  const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [description, setDescription] = useState("");
 
@@ -17,6 +18,7 @@ export const CTA = () => {
     window.open(mailtoLink, "_blank");
     setSubject("");
     setDescription("");
+    setName("");
   };
 
   return (
@@ -39,8 +41,8 @@ export const CTA = () => {
                 <label className="text-heading-2 block mb-2 text-lg  font-semibold">Name</label>
                 <input
                   type="text"
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   placeholder="Enter Your Name"
                   className="text-heading-2 w-full px-4 py-3 rounded-lg border border-gray-300  focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
